@@ -4,7 +4,10 @@ document.getElementById('login').addEventListener('click', function(event) {
 	username = document.getElementById('username');
 	password = document.getElementById('password');
 	user = JSON.parse(localStorage.getItem([ username.value ]));
-	if (user) {
+
+	if (username.value == '@admin' && password.value == '@admin') {
+		window.location.href = 'admin.html';
+	} else if (user) {
 		console.log(user.password, password.value);
 		if (user['password'] === password.value) {
 			alert('Login Successful');
