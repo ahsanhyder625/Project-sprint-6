@@ -1,0 +1,23 @@
+body {
+	background-image: url(https://d1ralsognjng37.cloudfront.net/040c06d5-9d77-4574-84e0-ba050c9e237b);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-size: medium;
+}
+.card {
+	width: 100%;
+	height: 350px;
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px #ccc;
+	overflow: hidden;
+	transition: box-shadow 0.3s;
+	margin-bottom: 10px;
+}
+.card:hover {
+	box-shadow: 1px 1px 10px #000;
+	cursor: pointer;
+}

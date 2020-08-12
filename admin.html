@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="top-img">
+        <header>
+            <div class="d-flex justify-content-center">
+                <div class="nav1">
+                    <p class="float-right text-white h4 mt-3 nav-link" id="log_out">Login Out</p>
+                    <p class="text-left text-white h2"><span class="badge badge-pill badge-success">Admin Page</span></p>
+
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col mt-4">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                    <div id="login-column" class="col-md-6">
+                        <div class="box">
+                            <div class="shape1"></div>
+                            <div class="shape2"></div>
+                            <div class="shape3"></div>
+                            <div class="shape4"></div>
+                            <div class="shape5"></div>
+                            <div class="shape6"></div>
+                            <div class="shape7"></div>
+                            <div class="float">
+                                <form class="form" action="">
+                                    <div class="form-group">
+                                        <label for="restaurant" class="text-white">Restaurant Name:</label><br>
+                                        <input type="text" name="restaurant" id="restaurant" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="restImg" class="text-white">Restaurant Image:</label><br>
+                                        <input type="image" name="restImg" id="restImg" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodName" class="text-white">Food Name:</label><br>
+                                        <input type="text" name="foodName" id="foodName" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodPrice" class="text-white">Food Price:</label><br>
+                                        <input type="text" name="foodPrice" id="foodPrice" class="form-control">
+                                    </div>                                    
+                                    <div class="form-group">
+                                        <label for="foodImg" class="text-white">Food Image:</label><br>
+                                        <input type="image" name="foodImg" id="foodImg" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="create" class="btn btn-info btn-md" id='create' value="Add">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="text-center font-weight-bold h1 text-muted mb-5 mt-5">Sales report of each restaurant</div>
+        <canvas id="myChart1"></canvas>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="text-center font-weight-bold h1 text-muted mb-5 mt-5">Daily report of "Area da Dhaba"</div>
+        <canvas id="myChart2"></canvas>
+    </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="admin.js"></script>
+    
+</body>
+</html>
