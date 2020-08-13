@@ -15,7 +15,7 @@
         <header>
             <div class="d-flex justify-content-center">
                 <div class="nav1">
-                    <p class="float-right text-white m-0 mt-3 h4 nav-link"><a href="index.html">Logout</a></p>
+                    <p class="float-right text-white m-0 mt-3 h4 nav-link" id="log_out"><a href="index.html">Logout</a></p>
                 </div>
             </div>
         </header>
@@ -39,7 +39,9 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="restImg" class="text-white">Restaurant Image:</label><br>
-                                        <input type="image" name="restImg" id="restImg" class="form-control">
+                                        <select id="restImg" class="form-control">
+                                            <option selected>Choose...</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="foodName" class="text-white">Food Name:</label><br>
@@ -48,10 +50,12 @@
                                     <div class="form-group">
                                         <label for="foodPrice" class="text-white">Food Price:</label><br>
                                         <input type="text" name="foodPrice" id="foodPrice" class="form-control">
-                                    </div>                                    
+                                    </div>
                                     <div class="form-group">
                                         <label for="foodImg" class="text-white">Food Image:</label><br>
-                                        <input type="image" name="foodImg" id="foodImg" class="form-control">
+                                        <select id="foodImg" class="form-control">
+                                            <option selected>Choose...</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" name="create" class="btn btn-info btn-md" id='create' value="Add">
