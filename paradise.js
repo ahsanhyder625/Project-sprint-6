@@ -50,3 +50,14 @@ if (window.location.href.match('cart.html') != null) {
 		alert(`Ordered Placed with order number ${Math.floor(Math.random() * 10000000000) + 1}`);
 	});
 }
+
+if (window.location.href.match('index.html') != null || window.location.href.match('dashboard.html') != null) {
+	document.getElementById('search-button').addEventListener('click', () => {
+		event.preventDefault();
+		var search = document.getElementById('search-box').value.toLowerCase();
+		if (search.split(' ').length > 1) {
+			search = search.split(' ').join('');
+		}
+		window.location.href = `${search}.html`;
+	});
+}
