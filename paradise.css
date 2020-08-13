@@ -1,5 +1,6 @@
 body {
-	background-image: url(https://d1ralsognjng37.cloudfront.net/040c06d5-9d77-4574-84e0-ba050c9e237b);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+		url("https://d1ralsognjng37.cloudfront.net/040c06d5-9d77-4574-84e0-ba050c9e237b");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -20,4 +21,33 @@ body {
 .card:hover {
 	box-shadow: 1px 1px 10px #000;
 	cursor: pointer;
+}
+
+span {
+	cursor: pointer;
+}
+
+.minus,
+.plus {
+	width: 20px;
+	height: 20px;
+	background: #007bff;
+	border-radius: 4px;
+	padding: 0 8px 5px 8px;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	text-align: center;
+}
+.plus {
+	padding: 0 6px 5px 6px;
+}
+input {
+	height: 25px;
+	width: 20px;
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-top: 5px;
+	vertical-align: middle;
 }
