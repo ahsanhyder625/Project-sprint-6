@@ -37,25 +37,35 @@
                                         <label for="restaurant" class="text-white">Restaurant Name:</label><br>
                                         <input type="text" name="restaurant" id="restaurant" class="form-control">
                                     </div>
+
                                     <div class="form-group">
                                         <label for="restImg" class="text-white">Restaurant Image:</label><br>
-                                        <select id="restImg" class="form-control">
-                                            <option selected>Choose...</option>
-                                        </select>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="restImg">
+                                            <label class="custom-file-label" for="restImg">Choose file</label>
+                                            </div>
+                                        </div>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="foodName" class="text-white">Food Name:</label><br>
                                         <input type="text" name="foodName" id="foodName" class="form-control">
                                     </div>
+
                                     <div class="form-group">
                                         <label for="foodPrice" class="text-white">Food Price:</label><br>
                                         <input type="text" name="foodPrice" id="foodPrice" class="form-control">
                                     </div>
+
                                     <div class="form-group">
                                         <label for="foodImg" class="text-white">Food Image:</label><br>
-                                        <select id="foodImg" class="form-control">
-                                            <option selected>Choose...</option>
-                                        </select>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="foodImg">
+                                            <label class="custom-file-label" for="foodImg">Choose file</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" name="create" class="btn btn-info btn-md" id='create' value="Add">
