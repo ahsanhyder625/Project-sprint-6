@@ -46,8 +46,13 @@ if (window.location.href.match('cart.html') != null) {
 	}
 	document.getElementById('total').textContent = sum + 25;
 	document.getElementById('confirm').addEventListener('click', () => {
-		window.location.href = 'dashboard.html';
-		alert(`Ordered Placed with order number ${Math.floor(Math.random() * 10000000000) + 1}`);
+		if (window.localStorage.getItem('user')) {
+			window.location.href = 'dashboard.html';
+			window.localStorage.removeItem('cart');
+			alert(`Ordered Placed with order number ${Math.floor(Math.random() * 10000000000) + 1}`);
+		} else {
+			alert('Please Login');
+		}
 	});
 }
 
@@ -60,4 +65,11 @@ if (window.location.href.match('index.html') != null || window.location.href.mat
 		}
 		window.location.href = `${search}.html`;
 	});
+	var logout = document.getElementById('logout');
+	if (logout) {
+		logout.addEventListener('click', () => {
+			window.localStorage.removeItem('user');
+			window.location.href = 'index.html';
+		});
+	}
 }
